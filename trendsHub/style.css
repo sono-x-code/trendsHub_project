@@ -1,0 +1,883 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("trendsHub/Trendshub_assets/Trendshub_assets/fonts/Nunito/Nunito-VariableFont_wght.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* line-height: 22px; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --logo-color: #EA4335;
+    --button-color: #FDB813;
+    --bright-black: #333333;
+    --fade-white: #F7F9F9;
+}
+
+
+/* SIGN IN AND SIGN UP CSS */
+
+body {
+        font-family: 'Nunito';
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
+    font-size: 14px;
+    position: relative;
+    max-width: 100%;
+    line-height: 1.8;
+}
+
+body.supportPage {
+    background: #F7F9F9;
+}
+
+html.registration_html {
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+main.sign {
+    width: 650px;
+    height: fit-content;
+    margin: 30px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 0 0 20px;
+    display: grid;
+    place-items: center;
+}
+
+main.sign > div.header {
+    text-align: center;
+    margin: 50px 0 0;
+}
+
+main.sign > div.signup_header {
+    margin: 20px 0 0;
+}
+
+div.header > div.crest_logo {
+    width: 63px;
+    margin: auto;
+    height: 63px;
+    background: var(--logo-color);
+}
+
+div.header > div.crest_text {
+    margin: 15px auto;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+div.header p {
+    width: 75%;
+    margin: 0 auto 30px;
+    /* font-size: 16px; */
+}
+
+div.user_data {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+label {
+    width: fit-content;
+    margin: 0 0 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    /* display: block; */
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 350px;
+    height: 40px;
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 20px ;
+    border: 1px solid var(--bright-black);
+    border-radius: 5px;
+    display: block;
+    /* transition: all 0.4s linear; */
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+}
+a.forgot {
+    color: var(--button-color);
+    display: block;
+    width: fit-content;
+}
+
+div.user_data button.sign_btn {
+    margin: 15px 0 15px;
+    width: 100%;
+    height: 50px;
+    background: var(--button-color);
+    border-radius: 20px;
+    border: none;
+    color: var(--fade-white);
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+div.user_data button.google{
+    background-color: var(--bright-black);
+    font-size: 14px;
+}
+
+div.user_data button.google .fa-google{
+    font-size: 20px;
+    margin-inline: 10px;
+}
+
+div.line_or {
+    display: flex;
+    align-items: center;
+}
+
+div.line_or span.line {
+    width: 40%;
+    margin: 0 auto;
+    height: 1px;
+    background: var(--bright-black);
+}
+
+p.account {
+    width: fit-content;
+    margin: 0 auto 20px;
+}
+
+span.yellow_link {
+    color: var(--button-color);
+}
+
+div.terms_condition {
+    display: flex;
+    align-items: center;
+}
+
+
+/* HOME / LANDING PAGE  */
+header.homepage {
+    width: 100%;
+    height: 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    position: relative;
+}
+
+div.logo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-right: 30px;
+}
+
+div.logo > div.crest_logo {
+    width: 63px;
+    height: 63px;
+    background: var(--logo-color);
+    margin-inline: 0 10px ;
+}
+
+div.searchbar {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 30px;
+}
+input[type="search"] {
+    width: 300px;
+    height: 30px;
+    background: var(--fade-white);
+    border-radius: 10px;
+    border: none;
+    padding: 20px 15px 20px 35px;
+    display: block;
+}
+
+label.search_icon {
+    position: absolute;
+    top: 18%;
+    left: -10px;
+    background-color: #FFFFFF;
+    width: 25px;
+    height: 25px;
+    border-right: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #FDB813;
+}
+
+div.navigation {
+    width: 300px;
+    margin-right: 10%;
+}
+
+div.navigation ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+}
+
+div.navigation ul li {
+    display: block;
+    list-style: none;
+    height: 100%;
+    padding: 23px 0;
+    text-align: center;
+    position: relative;
+}
+
+div.navigation ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--button-color);
+    transform-origin: bottom right;
+    transform: scaleX(0);
+    transition: transform 0.25s linear;
+}
+
+/* div.navigation ul li.active{
+    color: #FDB813;
+} */
+
+div.navigation ul li.active::after {
+    transform: scaleX(1);
+    color: #FDB813;
+}
+
+div.navigation ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+div.nav_button a.signUp_margin {
+    margin-inline: 20px;
+}
+
+div.nav_button button {
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+div.nav_button button.signUp_btn {
+    background-color: var(--button-color);
+}
+div.nav_button button.signIn_btn {
+    background-color: var(--logo-color);
+}
+
+
+/* BODY DESIGN CSS  */
+
+
+main div.main_row {
+    display: flex;
+    max-width: 100%;
+    align-items: start;
+    gap: 15px ;
+    background: var(--fade-white);
+    margin-inline: auto;
+}
+
+main div.main_row div.main_content,  div.main_row div.related_article{
+    margin-top: 30px;
+}
+
+
+/* SIDE NAV DESIGN  */
+
+/* 
+div.related_article,div.nav {
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+
+} */
+
+div.nav {
+    position: -webkit-sticky;
+    position: sticky; 
+    top: 0;
+}
+
+main div.main_row div.nav {
+    width: 20%;
+    height: 100dvh;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 40px 50px;
+    /* position: sticky;
+    top: 0; */
+    font-size: 1em;
+
+}
+
+main div.main_row div.nav p {
+    font-weight: 600;
+    font-size: 17px;
+}
+
+main div.main_row div.nav ul a {
+    display: block;
+    position: relative;
+    width: fit-content;
+    margin-bottom: 25px;
+    font-weight: 400;
+    transition: color 0.2s linear;
+    padding-bottom: 3px;
+
+}
+main div.main_row div.nav ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    background-color: #FDB813;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .3s linear;
+}
+main div.main_row div.nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* main div.main_row div.nav ul a:hover {
+    color: #FDB813;
+} */
+
+main div.main_row div.nav ul a:nth-child(1) {
+    margin-top: 25px;
+}
+
+
+/* MAIN ARTICLE DESIGN */
+
+
+main div.main_row div.main_content {
+    width: 58%;  
+}
+
+main div.main_row div.related_article{
+    width: 24%;
+    /* display: grid;
+    place-content: center; */
+}
+
+main div.main_row div.main_content div.all_categories {
+    background-color: #FFFFFF;
+    padding: 22px 26px;
+    height: 100px;
+}
+
+main div.main_row div.main_content div.all_categories div.popular_post{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+main div.main_row div.main_content div.category {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+main div.main_row div.main_content div.category div.category_tag{
+    width: 15px;
+    height: 15px;
+    background: var(--button-color);
+    border-radius: 50%;
+    margin-inline: 0 11px;
+}
+
+
+main div.main_row div.main_content div.mind_question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0 30px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main div.main_row div.main_content div.mind_question div.mind_icon button{
+    font-size: 25px;
+    background: none;
+    border: none;
+    margin-inline: 5px;
+    cursor: pointer;
+}
+
+main div.main_row div.main_content div.mind_question div.mind_icon i.image_icon {
+    color: #FDB813;
+}
+
+main div.main_row div.main_content div.mind_question div.mind_icon i.share_icon {
+    color: #EA4335;
+}
+
+
+main p.post_header {
+    margin-bottom: 20px;
+}
+
+main div.main_row div.main_content div.trending_article {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+main div.main_row div.main_content div.trending_article h4 {
+    margin: 20px 0;
+}
+
+main div.main_row div.main_content div.trending_article p.article_post {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 14px;
+
+}
+
+main div.main_row div.main_content div.trending_article div.activities {
+    display: flex;
+}
+
+div.main_content div.trending_article div.activities div.likes,  div.trending_article div.activities div.comment {
+    display: flex;
+    align-items: center;
+    margin-inline: 0 30px;
+    background: none;
+    border: none;
+}
+
+div.main_content div.trending_article div.activities div.likes,  div.trending_article div.activities div.comment button {
+    display: flex;
+    align-items: center;
+    margin-inline: 0 30px;
+    background: none;
+    border: none;
+    font-family: inherit; 
+}
+
+div.trending_article div.activities div.comment button {
+    cursor: pointer; 
+}
+div.trending_article div.activities div.comment i.comment_icon { 
+    color: #FDB813;
+}
+
+div.main_content div.trending_article div.activities div.likes button {
+    border: none;
+    background: none;
+}
+
+div.main_content div.trending_article div.activities div.likes i#myLikes, div.trending_article div.activities div.comment i.comment_icon {
+    margin-inline: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    /* color: #FDB813; */
+}
+
+a.back_to_top {
+    display: block;
+    text-align: center;
+    background-color: #EA4335;
+    width: fit-content;
+    margin: 10px auto 20px;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* SIDE RELATED ARTICLE  */
+
+/* div.related_article {
+    height: fit-content;
+} */
+
+div.related_article div.all_article {
+    width: 320px;
+    height: 200px;
+    background-color: #333333;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;  
+    position: relative;
+}
+
+div.related_article div.side_bySide {
+    display: flex;
+    margin-bottom: 20px;
+    width: 320px;
+    justify-content: space-between;
+}
+
+div.related_article div.side_bySide div{
+    width: 155px;
+    height: 155px;
+    display: flex;
+    gap: 10px;
+    /* margin-inline: 5px; */
+    margin-bottom: 0px;
+}
+
+div.related_article div.all_article p.related_article_title {
+    color: #FFFFFF;
+    width: 100%;
+    position: absolute;
+    line-height: 22px;
+    bottom: 33px;
+    padding: 0 23px;
+    
+    /* left: 23px; */
+    /* background: rgb(51, 51, 51, 0.3); */
+}
+
+div.related_article div.side_bySide p.related_article_title {
+    font-size: 0.8rem;
+    width: 100%;
+    padding-left: 0 5px;
+    bottom: 19px;
+}
+
+div.related_article a div.trendnews_one {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url(Trendshub_assets/Trendshub_assets/images/related_articles/simi_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.related_article a div.trendnews_two {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url(Trendshub_assets/Trendshub_assets/images/related_articles/newmoney.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.related_article a div.trendnews_three {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url(Trendshub_assets/Trendshub_assets/images/related_articles/3559.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.related_article a div.trendnews_four {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url(Trendshub_assets/Trendshub_assets/images/related_articles/Amusan-Tobi-640x360.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.related_article a div.trendnews_five {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%), url(Trendshub_assets/Trendshub_assets/images/related_articles/aNNIE-AND-tuface-iludio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.related_article a div {
+    transition: scale 0.15s linear;
+}
+
+div.related_article a div:hover {
+    scale: 0.98;
+}
+
+
+/* HOME PAGE USER LOGGED IN  */
+
+header.homepage div.loggedIn_nav_button {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.homepage div.loggedIn_nav_button button.forum_btn {
+    background-color: var(--button-color);
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+header.homepage div.loggedIn_nav_button button.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333333;
+    color: #FFFFFF;
+    display: grid;
+    place-content: center;
+    font-size: 20px;
+}
+
+/* USER OVERLAY  */
+.modal {
+        display: none;
+        position: fixed; 
+        z-index: 99; 
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.6); 
+}
+
+.modal-content {
+        background-color: #fff;
+        margin: auto;
+        padding: 20px;
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+        position: absolute;
+        right: 20px;
+}
+
+.modal-content .userOverlay_content {
+    margin: 20px 0 0 20px;
+}
+
+.modal-content a {
+        display: block;
+        width: fit-content;
+        font-size: 1em;
+        margin-bottom: 20px;
+}
+
+.modal-content a.log_out {
+        color: #EA4335;   
+}
+
+.close {
+        color: #000;
+        float: right;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        border-radius: 10px;
+        padding: 5px;
+}
+
+/* ADD COMMENT  */
+
+div.comment_content {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0,0,0);  */
+    background-color: rgba(0,0,0,0.6);
+}
+
+textarea.add_comment {
+    position: absolute;
+    inset: 0;
+    margin: auto auto 28px;
+    width: 50%;
+    height: 150px;
+    resize: none;
+    border-radius: 10px;
+    padding: 17px 50px 17px 23px;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+div.comment_content button.comment_send i.send_icon {
+    background-color: #EA4335;
+    font-size: 1rem;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-content: center;   
+    border-radius: 10px; 
+    cursor: pointer;
+}
+div.comment_content button.comment_send {
+    position: absolute;
+    right: 24%;
+    bottom: 50px;
+}
+
+
+/* SUPPORT PAGE DESIGN  */
+
+div.support_header {
+    width: 50%;
+    text-align: center;
+    margin: 50px auto;
+    line-height: 1.8;
+
+}
+
+div.support_headerText {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #FDB813;
+}
+
+div.support_input {
+    position: relative;
+    width: 40%;
+    margin: 0 auto;
+}
+
+input#supportInput {
+    border: none;
+    padding: 21px 54px 21px 21px;
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+}
+
+i.supportInput_icon {
+    background: #EA4335;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+div.frequent_question {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    line-height: 1.8;
+    /* position: relative; */
+
+    /* height: 60dvh; */
+    /* background: url("Trendshub_assets/Trendshub_assets/Online_Courses_Illustration-removebg-preview.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right; */
+}
+
+div.faq_text {
+    flex-basis: 70%;
+}
+
+div.faq_bg img{
+    /* z-index: -99; */
+    position: sticky;
+    top: 0;
+}
+
+div.frequent_question div.faq_header {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+ul.support_list {
+    list-style-position: inside;
+}
+
+ul.support_list li{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+ul.support_list p{
+    width: 100%;
+    font-size: 14px;
+}
+
+footer.support_footer {
+    background: #FFFFFF;
+    padding: 40px 50px;
+    width: 100%;
+    height: 45dvh;
+    margin: 30px auto 0;
+}
+
+div.footer_credit {
+    display: flex;
+    width: 90%;
+    margin: 20px 0 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+div.footer_nav a{
+    display: inline-block;
+    margin-inline: 15px;
+    transition: color 0.3s linear;
+}
+
+div.footer_nav a:hover{
+    color: #EA4335;
+}
+
+div.footer_socials a {
+    font-size: 30px;
+    margin-inline: 20px;
+    transition: color 0.3s linear;
+}
+
+div.footer_socials a i {
+    transition: color 0.3s linear;
+}
+div.footer_socials a i.support_fb:hover {
+    color: #00f;
+}
+
+div.footer_socials a i.support_tw:hover {
+    color: #38cafa;
+}
+
+div.footer_socials a i.support_insta:hover {
+    color: #f13939;
+}
